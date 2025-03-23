@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Element to the DOM</title>
+</head>
+<body>
+
+    <div class="content">
+        <h2>Welcome</h2>
+    </div>
+
+    <button id="Add Paragraph">Add Paragraph</button>
+
+    <script>
+        document.getElementById("Add Paragraph").addEventListener("click", function() {
+            let para = document.createElement("p");
+            para.textContent = "This is a new paragraph";
+            document.querySelector(".content").appendChild(para);
+        });
+    </script>
+
+</body>
+</html>
