@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Class on Click</title>
+    <style>
+        #toggleElement{
+            width: 150px;
+	    line-height: 100px;
+            background-color: grey;
+            text-align: center;
+        }
+
+        #toggleElement.active {
+            background-color: lightblue;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="toggleElement">Click Me</div>
+
+    <script>
+        document.getElementById("toggleElement").addEventListener("click", function() {
+            this.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
