@@ -1,0 +1,149 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+nav {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #61dafb;
+}
+
+nav button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #dc2626;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.6rem 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+.horizontal-product-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.horizontal-product-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-product-row::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.product-card {
+  flex: 0 0 auto; /* Prevent shrinking */
+  min-width: 200px;
+  max-width: 220px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #059669;
+}
